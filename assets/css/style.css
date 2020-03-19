@@ -1,0 +1,34 @@
+h1, h2 {
+  font-family: PokemonSolid;
+  font-size: 3rem;
+}
+p {
+  color: white;
+}
+ol > li {
+  margin: 2%;
+  background-color: #535c66;
+  border-radius: 10px;
+  border: 2px #040dc9 outset;
+}
+footer {
+  background-color: #25292d;
+  margin-top: 2%;
+  padding: 5%;
+}
+.titleStyle {
+  color: #ffc107;
+  text-shadow: -2px 0 #001b66, 0 2px #001b66, 2px 0 #040dc9, 0 -2px #566fff;
+}
+@font-face {
+  font-family: "PokemonSolid";
+
+  src: url("../fonts/PokemonSolid.woff") format("woff"),
+    url("../fonts/PokemonSolid.woff2") format("woff2");
+}
+@font-face {
+  font-family: "PokemonHollow";
+
+  src: url("../fonts/PokemonHollow.woff") format("woff"),
+    url("../fonts/PokemonHollow.woff2") format("woff2");
+}
