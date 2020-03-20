@@ -1,6 +1,8 @@
-h1, h2 {
+h1, h2, h3 {
   font-family: PokemonSolid;
-  font-size: 3rem;
+  color: #ffc107;
+  text-shadow: -2px 0 #001b66, 0 2px #001b66, 2px 0 #040dc9, 0 -2px #566fff;
+  margin-bottom: 2rem;
 }
 p {
   color: white;
@@ -16,9 +18,13 @@ footer {
   margin-top: 2%;
   padding: 5%;
 }
-.titleStyle {
-  color: #ffc107;
-  text-shadow: -2px 0 #001b66, 0 2px #001b66, 2px 0 #040dc9, 0 -2px #566fff;
+#adventureBegins {
+  font-family: PokemonHollow;
+  font-size: 3rem;
+}
+.dailyReport {
+  border-radius: 10px;
+  border: 5px #040dc9 inset;
 }
 @font-face {
   font-family: "PokemonSolid";
