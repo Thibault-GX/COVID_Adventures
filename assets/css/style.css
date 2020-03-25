@@ -14,7 +14,7 @@ ol > li {
   border: 2px #040dc9 outset;
 }
 footer {
-  background-color: #25292d;
+  background-color: #151719;
   margin-top: 2%;
   padding: 5%;
 }
@@ -22,19 +22,48 @@ footer {
   font-family: PokemonHollow;
   font-size: 3rem;
 }
+#navbarCA {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1030;
+  height: 100vh;
+  background-color: #25292d;
+}
+#navbarMobileContent {
+  display: none;
+}
 .dailyReport {
   border-radius: 10px;
   border: 5px #040dc9 inset;
+}
+.reportsTitles {
+  font-family: PokemonSolid;
+  font-size: 2rem;
+  color: #ffc107;
+  text-shadow: -2px 0 #001b66, 0 2px #001b66, 2px 0 #040dc9, 0 -2px #566fff;
+}
+.pcBoxes:hover {
+  color: #040dc9;
+  text-shadow: -2px 0 #bf8f01, 0 2px #bf8f01, 2px 0 #ffc107, 0 -2px #ffd044;
 }
 @font-face {
   font-family: "PokemonSolid";
 
   src: url("../fonts/PokemonSolid.woff") format("woff"),
-    url("../fonts/PokemonSolid.woff2") format("woff2");
+  url("../fonts/PokemonSolid.woff2") format("woff2");
 }
 @font-face {
   font-family: "PokemonHollow";
 
   src: url("../fonts/PokemonHollow.woff") format("woff"),
-    url("../fonts/PokemonHollow.woff2") format("woff2");
+  url("../fonts/PokemonHollow.woff2") format("woff2");
+}
+@media screen and (max-width: 768px){
+  #navbarCA {
+    display: none;
+  }
+  #navbarMobileContent {
+    display: inline;
+  }
 }

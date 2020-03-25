@@ -18,7 +18,32 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="shortcut icon" href="covidAdventures.ico" type="image/x-icon">
 </head>
-<body class="bg-dark">
+<body id="beginning" class="bg-dark" data-spy="scroll" data-target="#navbarCA" data-offset="0">
+  <!-- NAV -->
+  <nav id="navbarCA" class="navbar flex-column">
+    <a href="#beginning"><i class="fas fa-arrow-alt-circle-up fa-3x text-light"></i></a>
+    <ul id="navList" class="nav nav-pills flex-column">
+      <li class="nav-item"><a class="nav-link" href="#day1">Jour 1</a></li>
+      <li class="nav-item"><a class="nav-link" href="#day2">Jour 2</a></li>
+      <li class="nav-item"><a class="nav-link" href="#day3">Jour 3</a></li>
+    </ul>
+    <a href="#end"><i class="fas fa-arrow-alt-circle-down fa-3x text-light"></i></a>
+  </nav>
+  <!-- NAV MOBILE -->
+  <nav class="row navbar navbar-expand-md justify-content-center fixed-bottom" id="navbarMobileMode">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobileContent" aria-controls="navbarMobileContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </span>
+    </button>
+    <div id="navbarMobileContent">
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item"><a class="nav-link" href="#day1">Jour 1</a></li>
+        <li class="nav-item"><a class="nav-link" href="#day2">Jour 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="#day3">Jour 3</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- NAV'S END -->
   <div class="container">
     <!-- INTRODUCTION -->
     <h1 class="text-center m-5 titleStyle">Bienvenue sur COVID Adventures !</h1>
@@ -180,20 +205,21 @@
         <p>Je m'éloignais, Célesta nous regarda nous éloigner depuis les abords du village, jusqu'à ce que nous disparaissions sur la route 29. Au revoir Bourg Geon, la prochaine fois que nous nous reverrons, ce sera par mon échec ou par ma victoire face au Défi des Arènes !</p>
         <p>Corben et moi reprenions la route pour la Ville Griotte, bien décidés à mener nos combats et renforcer notre équipe ! Notre première recrue fut une jeune Roucool capturée après quelques pas sur la route 29 et que je décidais de nommer Agnès, afin que l'intelligence de son homonyme lui apporte la sagesse dont elle pourrait avoir besoin lors de situations de crise. Puis décidant de tenter ma chance, je fis une rencontre sur le bas de la route 46. Quelle ne fut ma joie de découvrir une Racaillou que je m'empressais d'ajouter à nos forces. Celle-ci se prénommerait Sibeth, en l'honneur de la solidité avec laquelle une femme de légende avait bravé vents et marrées pour protéger les siens contre les plus véhémentes critiques. Une fois arrivés à la Ville Griotte, nous opérions un rapide passage au Centre Pokémon avant de nous entraîner jusqu'à la tombée de la nuit, laquelle finirait par s'ouvrir sur notre deuxième jour d'aventure.</p>
       </div>
+      <!-- DAILY REPORT 1 -->
       <div class="dailyReport bg-secondary">
         <h3 class="titleStyle m-2">Rapport du jour 1</h3>
         <div class="d-flex flex-row flex-wrap justify-content-around">
-          <p class="col-12 text-center font-weight-bold">État actuel de l'équipe :</p>
+          <p class="col-12 text-center font-weight-bold reportsTitles">État actuel de l'équipe :</p>
           <div class="flex-column col-md-4">
-            <img class="img-fluid" src="./assets/img/CorbenKaiminus.png" alt="Corben le Kaiminus">
+            <img class="img-fluid" src="./assets/img/CorbenKaiminus.png" alt="Sprite de Corben le Kaiminus">
             <p class="text-center">Corben (niveau 11)</p>
           </div>
           <div class="flex-column col-md-4">
-            <img class="img-fluid" src="./assets/img/AgnèsRoucool.png" alt="Agnès le Roucool">
+            <img class="img-fluid" src="./assets/img/AgnèsRoucool.png" alt="Sprite de Agnès le Roucool">
             <p class="text-center">Agnès (niveau 10)</p>
           </div>
           <div class="flex-column col-md-4">
-            <img class="img-fluid" src="./assets/img/SibethRacaillou.png" alt="Sibeth le Racaillou">
+            <img class="img-fluid" src="./assets/img/SibethRacaillou.png" alt="Sprite de Sibeth le Racaillou">
             <p class="text-center">Sibeth (niveau 10)</p>
           </div>
         </div>
@@ -268,39 +294,103 @@
         <p>- Au revoir Professeur."</p>
         <p>Une fois rendu à l'échoppe, l'assistant m'aborda. Il avait en sa possession ce qu'ils avaient décidé d'appeler l'Oeuf Mystère. Pour élucider leurs questionnements, ils avaient besoin que l'oeuf reste en compagnie de Pokémon énergiques pour qu'il puisse se développer et à terme, éclore. J'acceptais cette nouvelle mission et promettais à l'assistant de tenir leur équipe au courant si l'oeuf venait à éclore. Je prenais congé et après l'achat de quelques fournitures sortais de la boutique. En sortant, je tombais nez-à-nez avec une femme en kimono. Elle observa avec intérêt l'Oeuf Mystère, puis me déclama quelques vers énigmatiques avant de s'en aller. Je pris la voie du Centre Pokémon de Mauville afin de passer la nuit avant de reprendre ma route, me posant en chemin mille questions concernant cette dernière rencontre.</p>
       </div>
+      <!-- DAILY REPORT 2 -->
       <div class="dailyReport bg-secondary">
         <h3 class="titleStyle m-2">Rapport du jour 2</h3>
         <div class="d-flex flex-row flex-wrap justify-content-around">
-          <p class="col-12 text-center font-weight-bold">État actuel de l'équipe :</p>
+          <p class="col-12 text-center font-weight-bold reportsTitles">État actuel de l'équipe :</p>
           <div class="flex-column col-md-4">
-            <img class="img-fluid" src="./assets/img/CorbenCrocrodil.png" alt="Corben le Crocrodil">
+            <img class="img-fluid" src="./assets/img/CorbenCrocrodil.png" alt="Sprite de Corben le Crocrodil">
             <p class="text-center">Corben (niveau 18)</p>
           </div>
           <div class="flex-column col-md-4">
-            <img class="img-fluid" src="./assets/img/AgnèsRoucoups.png" alt="Agnès le Roucoups">
+            <img class="img-fluid" src="./assets/img/AgnèsRoucoups.png" alt="Sprite de Agnès le Roucoups">
             <p class="text-center">Agnès (niveau 18)</p>
           </div>
           <div class="flex-column col-md-4">
-            <img class="img-fluid" src="./assets/img/SibethRacaillou.png" alt="Sibeth le Racaillou">
+            <img class="img-fluid" src="./assets/img/SibethRacaillou.png" alt="Sprite de Sibeth le Racaillou">
             <p class="text-center">Sibeth (niveau 18)</p>
           </div>
           <div class="flex-column col-md-4">
-            <img class="img-fluid" src="./assets/img/MarlèneChetiflor.png" alt="Marlène le Chétiflor">
+            <img class="img-fluid" src="./assets/img/MarlèneChetiflor.png" alt="Sprite de Marlène le Chétiflor">
             <p class="text-center">Marlène (niveau 10)</p>
           </div>
           <div class="flex-column col-md-4">
-            <img class="img-fluid" src="./assets/img/TogepiEgg.png" alt="Oeuf de Togepi">
+            <img class="img-fluid" src="./assets/img/TogepiEgg.png" alt="Sprite de Oeuf de Togepi">
             <p class="text-center">Oeuf mystère</p>
+          </div>
+        </div>
+        <p class="text-justify m-2"><span class="font-weight-bold">Observations :</span> comme prévu, l'entraînement du jour 2 a largement avantagé les membres de l'équipe en ayant bénéficié. Le reste du challenge ne devrait donc pas nécessiter d'autres séances aussi intensives. À noter également la survie miraculeuse de CassTaMère qui s'est jouée à 3 PV lors de sa rencontre avec l'Insécateur d'Hector.</p>
+      </div>
+    </div>
+    <!-- DAY'S TWO END -->
+    <!-- DAY THREE -->
+    <div id="day3" class="mt-3">
+      <h2>24/03/2020 - Jour 3</h2>
+      <a data-toggle="collapse" href="#toEcorcia" aria-expanded="false" aria-controls="toEcorcia"><h3>En route pour Ecorcia !</h3></a>
+      <div id="toEcorcia" class="collapse">
+      </div>
+      <a data-toggle="collapse" href="#ramolossWell" aria-expanded="false" aria-controls="ramolossWell"><h3>La queue qui valait un million de ₽</h3></a>
+      <div id="ramolossWell" class="collapse">
+      </div>
+      <a data-toggle="collapse" href="#ecorciaArena" aria-expanded="false" aria-controls="ecorciaArena"><h3>Correction de bugs</h3></a>
+      <div id="ecorciaArena" class="collapse">
+      </div>
+      <!-- DAILY REPORT 3 -->
+      <div class="dailyReport flex-row bg-secondary">
+        <h3 class="titleStyle m-2">Rapport du jour 3</h3>
+        <div class="d-flex flex-wrap justify-content-around">
+          <p class="col-12 text-center reportsTitles">État actuel de l'équipe :</p>
+          <div class="flex-column col-md-4">
+            <img class="img-fluid" src="./assets/img/CorbenCrocrodil.png" alt="Sprite de Corben le Crocrodil">
+            <p class="text-center">Corben (niveau 18)</p>
+          </div>
+          <div class="flex-column col-md-4">
+            <img class="img-fluid" src="./assets/img/AgnèsRoucoups.png" alt="Sprite de Agnès le Roucoups">
+            <p class="text-center">Agnès (niveau 18)</p>
+          </div>
+          <div class="flex-column col-md-4">
+            <img class="img-fluid" src="./assets/img/SibethRacaillou.png" alt="Sprite de Sibeth le Racaillou">
+            <p class="text-center">Sibeth (niveau 18)</p>
+          </div>
+          <div class="flex-column col-md-4">
+            <img class="img-fluid" src="./assets/img/MarlèneChetiflor.png" alt="Sprite de Marlène le Chétiflor">
+            <p class="text-center">Marlène (niveau 16)</p>
+          </div>
+          <div class="flex-column col-md-4">
+            <img class="img-fluid" src="./assets/img/CassTaMèreLainergie.png" alt="Sprite de CassTaMère le Lainergie">
+            <p class="text-center">CassTaMère (niveau 15)</p>
+          </div>
+          <div class="flex-column col-md-4">
+            <img class="img-fluid" src="./assets/img/TogepiEgg.png" alt="Sprite de Oeuf de Togepi">
+            <p class="text-center">Oeuf mystère</p>
+          </div>
+        </div>
+        <a class="reportsTitles pcBoxes d-flex justify-content-center font-weight-bold m-2" data-toggle="collapse" href="#reportDay3PCState" aria-expanded="false" aria-controls="reportDay3PCState">Les Pokémon en attente dans le PC</a>
+        <div id="reportDay3PCState" class="collapse m-2 bg-dark rounded">
+          <div class="d-flex flex-row flex-wrap justify-content-around">
+            <div class="flex-column col-md-4">
+              <img class="img-fluid" src="./assets/img/TergescentOnix.png" alt="Sprite de Tergescent l'Onix">
+              <p class="text-center">Tergescent (niveau 6)</p>
+            </div>
+            <div class="flex-column col-md-4">
+              <img class="img-fluid" src="./assets/img/Jean-Mi_Rattata.png" alt="Sprite de Jean-Mi' le Rattata">
+              <p class="text-center">Jean-Mi' (niveau 6)</p>
+            </div>
+            <div class="flex-column col-md-4">
+              <img class="img-fluid" src="./assets/img/PauloNosferapti.png" alt="Sprite de Paulo le Nosferapti">
+              <p class="text-center">Paulo (niveau 6)</p>
+            </div>
           </div>
         </div>
         <p class="text-justify m-2"><span class="font-weight-bold">Observations :</span> la grosse séance d'entraînement précédant la première arène a peut-être été un excès de zèle, la suite de l'aventure sera sûrement parcourue de manière un peu plus détendue. J'ai aussi oublié de capturer un Pokémon à la route 30, ce qui n'est pas un drâme et ne devrait pas poser de problème pour le bon déroulé du challenge.</p>
       </div>
     </div>
-    <!-- DAY'S TWO END -->
+    <!-- DAY THREE'S END -->
   </div>
   <!-- ADVENTURE'S END -->
   <!-- FOOTER -->
-  <footer class="d-flex justify-content-around">
+  <footer id="end" class="d-flex justify-content-around">
     <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#disclaimerModal">Avertissements</button>
     <div class="modal" id="disclaimerModal" tabindex="-1" role="dialog" aria-labelledby="disclaimerModal" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
