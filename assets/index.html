@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <!-- OPEN GRAPH META DATAS -->
+  <meta property="og:title" content="COVID Adventures, ou comment tromper l'ennui">
+  <meta property="og:description" content="Bienvenue sur COVID Adventures, un Nuzlocke Challenge se déroulant sur Pokémon Soul Silver et ayant pour but de divertir son auteur et les curieux en ces temps troublés">
+  <meta property="og:image" content="https://thibault-gx.github.io/COVID_Adventures/assets/img/LinkPreviewSmogogo.png">
+  <meta property="og:url" content="https://thibault-gx.github.io/COVID_Adventures/">
+  <!-- OPEN GRAPH META'S END -->
+  <meta name="author" content="Thibault Grimoux">
+  <meta name="description" content="Bienvenue sur COVID Adventures, un Nuzlocke Challenge se déroulant sur Pokémon Soul Silver et ayant pour but de divertir son auteur et les curieux en ces temps troublés.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>COVID Adventures, ou comment tromper l'ennui</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/88460e48d7.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="covidAdventures.ico" type="image/x-icon">
+</head>
+<body id="beginning" class="bg-dark" data-spy="scroll" data-target="#navbarCA" data-offset="0">
+  <!-- NAV -->
+  <nav id="navbarDesktop" class="navbar flex-column">
+    <a href="#beginning"><i class="fas fa-arrow-alt-circle-up fa-3x text-light"></i></a>
+    <ul id="navList" class="nav nav-pills flex-column">
+      <li class="nav-item"><a class="nav-link" href="#day1">Jour 1</a></li>
+      <li class="nav-item"><a class="nav-link" href="#day2">Jour 2</a></li>
+      <li class="nav-item"><a class="nav-link" href="#day3">Jour 3</a></li>
+    </ul>
+    <a href="#end"><i class="fas fa-arrow-alt-circle-down fa-3x text-light"></i></a>
+  </nav>
+  <!-- NAV MOBILE -->
+  <nav class="row navbar navbar-expand-lg justify-content-around" id="mobileNav">
+    <a class="navbar-toggler row justify-content-center" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fa fa-bars fa-2x text-light" aria-hidden="true"></i></span>
+    </a>
+    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+      <div class="row justify-content-around">
+      <a href="#beginning" class="col-3 align-self-center"><i class="fas fa-arrow-alt-circle-up fa-3x text-light"></i></a>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item"><a class="nav-link" href="#day1">Jour 1</a></li>
+        <li class="nav-item"><a class="nav-link" href="#day2">Jour 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="#day3">Jour 3</a></li>
+      </ul>
+      <a href="#end" class="col-3 align-self-center"><i class="fas fa-arrow-alt-circle-down fa-3x text-light"></i></a>
+    </div>
+  </div>
+  </nav>
+  <!-- NAV'S END -->
+  <div class="container">
+    <!-- INTRODUCTION -->
+    <h1 class="text-center m-5 titleStyle">Bienvenue sur COVID Adventures !</h1>
+    <div class="row col-12 text-justify">
+      <p>Bienvenue à tous les curieux sur la page de <span class="font-weight-bold">COVID Adventures</span>, un Nuzlocke Challenge se déroulant sur Pokémon SoulSilver et visant à distraire son auteur durant la sombre période de confinement de la crise sanitaire liée à l'émergence du COVID-19 en l'an de grâce 2020. Dans cet exercice, vous pourrez donc retrouver des comptes-rendus journaliers des aventures d'un (presque) jeune dresseur alors qu'il décide de braver son confinement pour aller explorer le monde et découvrir les dangereux mystères qu'il recèle.</p>
+      <p>Et comme c'est un Nuzlocke Challenge, ces aventures suivront les règles énoncées ci-après :</p>
+      <!-- RULES LIST -->
+      <button class="btn btn-warning mb-2" type="button" data-toggle="collapse" data-target="#rulesCollapse" aria-expanded="false" aria-controls="rulesCollapse">
+        Cliquez ici pour dévoiler les 10 règles de <span class="font-weight-bold">COVID Adventures</span> !
+      </button>
+      <div class="collapse" id="rulesCollapse">
+        <ol class="col-12 text-light font-weight-bold d-flex flex-row flex-wrap">
+          <li class="col-md-5">Un Pokémon qui se retrouve K.O. est considéré comme mort, et ne peut plus être utilisé.</li>
+          <li class="col-md-5">Le joueur ne peut capturer que le premier Pokémon sauvage qu'il croise dans chaque zone entière. Si celui-ci est mis K.O. ou si le joueur fuit, il n'aura pas de seconde chance. Néanmoins, une exception est faite pour certains jeux Pokémon où les premières routes sont visitées avant l'obtention des Poké Balls.</li>
+          <li class="col-md-5">Bien que ce ne soit pas une règle définie au Nuzlocke Challenge, le consensus général est que les joueurs doivent également surnommer tous leurs Pokémon, dans le souci de former des liens émotionnels plus forts avec eux.</li>
+          <li class="col-md-5">Pouvoir retenter une autre rencontre en mettant K.O le premier Pokémon rencontré pour pouvoir en capturer un autre, si l'espèce rencontrée a déjà été capturée, pour ne pas en avoir plusieurs de la même espèce.</li>
+          <li class="col-md-5">Considérer un hors-jeu comme un Game Over, même s'il y a des Pokémon dans le PC.</li>
+          <li class="col-md-5">Interdire le changement de Pokémon après avoir mis K.O. le Pokémon d'un PNJ en mettant le mode Défini dans les Options.</li>
+          <li class="col-md-5">Bannir l'utilisation de la Master Ball.</li>
+          <li class="col-md-5">Au lieu de relâcher un Pokémon mis K.O., il est possible de le stocker indéfiniment dans le P.C. ou de l'échanger à la place (cela me permettra d'établir un panthéon des amis tombés au combat sans oublier personne).</li>
+          <li class="col-md-5">Bannir la capture et l'utilisation de Pokémon légendaires.</li>
+          <li class="col-md-5">S'interdire les Repousses.</li>
+        </ol>
+      </div>
+      <!-- RULES END -->
+    </div>
+  </div>
+  <!-- INTRODUCTION'S END -->
+  <!-- ADVENTURE -->
+  <div class="container">
+    <p class="mb-5 mt-5 reportsTitles">À présent, place à l'aventure !</p>
+    <p class="text-success font-weight-bold">Faites apparaître le texte en cliquant sur le titre du chapitre que vous souhaitez consulter.</p>
+    <!-- DAY ONE -->
+    <div id="day1" class="mt-3">
+      <h2>20/03/2020 - Jour 1</h2>
+      <a data-toggle="collapse" href="#bourGeonDeparture" aria-expanded="false" aria-controls="bourGeonDeparture"><h3>Le départ</h3></a>
+      <div id="bourGeonDeparture" class="collapse">
+        <p>4h du matin... Voilà déjà plusieurs jours que le confinement est en place, ce qui avait été pris jusqu'alors comme une vulgaire grippe bien contagieuse prend depuis peu des allures de fin du monde. Même si cela ne m'empêche pas de dormir, la paranoïa des gens et la panique générée par les annonces du gouvernement me consternent. Les sorties au théâtre avec sa <span class="font-italic">sugar-granny</span> ont vite été remplacées par un confinement organisé à la va-vite. Ce qui me fait me retourner dans mon lit, c'est l'appel de l'aventure, encouragé la veille par un message du Professeur Orme, notre sommité locale en matière d'étude de Pokémon. Il veut m'envoyer dehors, mais n'a pas jugé bon de m'en préciser la raison.</p>
+        <p>Sorti du lit, je me prépare à rejoindre Orme à son labo, puis descends les escaliers jusqu'à la salle à manger où ma mère m'attendait. Elle s'inquiète, comme toutes les mères j'imagine.</p>
+        <p>"Tu es sûr que tout ira bien ? Le Professeur ne t'a rien dit de plus sur la raison de ta convocation ?</p>
+        <p>- Aucune idée, maman. Il est resté très secret."</p>
+        <p>Elle en profite pour me remettre mon Pokématos tout juste revenu de réparation. C'est l'un des derniers appareil électronique en vogue, qui permet d'être amélioré grâce à des coupons de fonctionnalités. Ma mère a jugé bon d'équiper le miens du téléphone, mieux vaut être prudent, qu'elle me dit. Je vérifie une dernière fois que ma Carte de Dresseur soit dans mon sac, les forces de l'ordre contrôlent régulièrement les citoyens sur les raisons de leurs sorties, alors autant ne rien laisser au hasard.</p>
+        <p>Je passe la porte et aperçois ma jeune voisine, Célesta, qui joue avec son Marill devant chez elle. La petite créature est pleine d'entrain et ne se rend peut-être pas compte que la vie a changé pour nous. Je fais signe à Célesta et me mets en route pour le laboratoire. Il n'est pas très loin de la maison, mais ces quelques minutes de marche me permettent de me rendre compte à quel point les rues sont devenues calmes. Bourg Geon n'a jamais été un village très animé, mais la situation n'y a rien arrangé. En arrivant au laboratoire, je surprends un jeune homme aux cheveux rouges rôdant près du labo, peut-être attend-t-il quelqu'un ? Pas le temps de se poser des questions, je rentre dans le labo. À peine ai-je eu l'occasion de passer la porte que le Professeur m'interpelle.</p>
+        <p>"Ah, Jaxom, te voilà ! Je n'en pouvais plus de t'attendre !</p>
+        <p>- Désolé, Prof. La nuit n'a pas été la meilleure de ma vie, et votre convocation ne m'a pas aidé à l'améliorer. Qu'est-ce qui peut demander que vous m'ayez convoqué aujourd'hui ?</p>
+        <p>- Rien de très grave en soit, ne t'en fais pas. J'ai besoin de quelqu'un pour se rendre chez un ami à moi, Monsieur Pokémon. C'est un passionné, toujours à la recherche de quelque extravagance pour satisfaire sa curiosité et il n'est pas rare qu'il prenne contact avec le laboratoire pour nous faire part de ses découvertes. Ce sont généralement des broutilles, mais sa dernière découverte soulève pourtant quelques questions, et c'est là que tu entres en jeu.</p>
+        <p>- Allez-y, j'écoute.</p>
+        <p>- Avec les dernières mesures sanitaires, on ne peut plus sortir librement, et les personnes jeunes sont celles qui prennent le moins de risques de développer de graves symptômes. Aussi, j'ai fait jouer mes relations pour t'obtenir une autorisation spéciale pour motif de recherche scientifique. Si tu conssens à me rendre ce service, elle est à toi. Et comme tu auras besoin d'un compagnon de route, je t'offre également l'un des trois Pokémon qui se trouvent derrière moi. Considère cela comme un dédommagement."</p>
+        <p>J'observe la machine que me montre le Professeur Orme. À l'intérieur de la cage du cylindre de verre se trouve trois Pokéballs. Orme m'ouvre la machine.</p>
+        <p>"Je te présente Germignon, Héricendre et Kaiminus. Ce sont trois Pokémon rares qui m'ont été confiés comme sujets d'étude il y a peu, mais j'aimerais voir comment ils se développent aux côtés d'un Dresseur, et avec la route qui t'attend, je pense que c'est une bonne occasion de répondre à mes questions. Tant que tu me tiens au courant de l'évolution de ton lien avec celui que tu choisiras, tout ira bien."</p>
+        <p>Mon choix est sans appel, ce sera le Kaiminus. Le petit Pokémon est un peu brut de décoffrage et commence à taquiner son environnement en mordillant ce qui lui passe à portée de mâchoire sitôt sorti de sa Pokéball. Il me plaît déjà.</p>
+        <p>"Tu as déjà une idée sur comment le baptiser ? C'est important de créer un lien entre le Dresseur et son Pokémon.</p>
+        <p>- Je pense qu'en ces temps incertains, on a besoin de quelqu'un puisse ouvrir la voie. Mon p'tit père, tu seras maintenant connu sous le nom de Corben !"</p>
+        <p>Le Kaiminus me regarde fixement quelques instants. Ses grands yeux verts plongent dans les miens... Il m'observe de bas en haut et pousse ce que j'interprête comme un petit cri de joie. Corben, notre aventure commence !</p>
+        <p>Le professeur me donne les derniers détails de ma mission : je vais devoir traverser la route 29 et me rendre jusqu'à la Ville Griotte puis me diriger au nord pour emprunter la route 30. Selon Orme, il y a peu d'habitations sur cette route, et je devrais facilement trouver celle du fameux Monsieur Pokémon. Au moment de quitter le laboratoire, un des assistants du Professeur m'attrape par le bras et m'offre quelques potions de soin.</p>
+        <p>"Par les temps qui courent, mieux vaut être prudent, les Pokémon semblent ne plus résister si bien au blessures que par le passé, nous avons même eu des rapports faisant état de décès à la suite de blessures graves qui n'auraient suscité qu'un K.O. auparavant, alors prends soin de ton Kaiminus. S'il lui arrivait quelque chose, le Professeur en serait malade."</p>
+        <p>Ses conseils pris en considération, je quitte le laboratoire et prends la direction de la sortie de Bourg Geon vers la route 29. Au moment de passer le laboratoire, j'aperçois le jeune homme aux cheveux rouges, rôdant toujours. Il me lance un regard assassin puis retourne à son occupation. Cet énergumène n'aura pas plus de mon attention, le Professeur m'a confié une tâche et je compte bien l'accomplir.</p>
+      </div>
+      <a data-toggle="collapse" href="#road29AndGriotteCity" aria-expanded="false" aria-controls="road29AndGriotteCity"><h3>Premières armes</h3></a>
+      <div id="road29AndGriotteCity" class="collapse">
+        <p>Je commence ma route vers la Ville Griotte. La route 29 passe par la campagne et n'est pas beaucoup fréquentée, autrement que par des Pokémon sauvages et quelques riverains qui viennent s'y dégourdir les jambes. Elle est truffée de hautes herbes dans lesquelles Fouinette, Rattata et Roucool pullulent. N'ayant pas le choix que d'en traverser certaines étendues, je m'engage avec Corben au milieu des herbes. Le bruissement des feuilles vertes ne cesse de rappeler que le printemps arrive et le vent apporte avec lui la douce odeur des jeunes pousses qui émergent du sol à mesure que le soleil revient apporter la vie aux végétaux sortis d'un long sommeil hivernal.</p>
+        <p>Corben virevolte au milieu des plantes et essaie de se faire les dents sur une souche d'arbre usée par le temps. Le petit Pokémon y met tant de coeur que la vieille souche finit par craquer et est réduite en morceaux dans un grand vacarme. Les restes de la vieille souche retombée, je tends l'oreille et perçois des bruits autour de nous, la destruction de la souche a dû alerter des Pokémon sauvages.</p>
+        <p>"Corben, prépare-toi à un peu d'entraînement !"</p>
+        <p>Il se rapproche de moi, et nous attendons, guettant le moindre indice. Des bruissements se rapprochent. De plusieurs directions ? Non, de la droite ! Un Fouinette sauvage apparaît ! J'essaie de mener le petit Pokémon au combat tant bien que mal, mais on sent que Corben participe à son premier affrontement. Ses mouvements sont hésitants et il a du mal à suivre ceux du Fouinette.</p>
+        <p>"Corben, utilise tes griffes !"</p>
+        <p>Il s'élance face au Fouinette et arrive à asséner correctement son coup. Le Fouinette encaisse, mais il n'est pas en reste et réplique violemment. Corben subit une attaque d'une rare intensité, mais tient bon. Il vaut mieux ne pas faire durer le combat, ou il sera en danger. Son adversaire n'a pas l'air au mieux de sa forme et semble avoir des difficultés a se maintenir sur ses pattes arrières.</p>
+        <p>"Corben, on tente le tout pour le tout, envoie un coup de griffes sur sa droite, mets-y tout ce que tu as !"</p>
+        <p>Il s'élance, le Founiette s'apprête à esquiver la charge, mais Corben est plus rapide et arrive à lui infliger une dernière blessure qui met le Pokémon en fuite. Je me précipite vers Corben pour faire une analyse de son état avec le Pokématos. Le petit Pokémon a eu une rude première expérience du combat, je vais devoir redoubler de vigilance et le faire s'entraîner un peu plus si nous voulons atteindre notre objectif en un seul morceau. Pour le moment, le plus important reste de le soigner, je vaporise le contenu d'une potion sur Corben. Ses écailles, portant les marques de son premier combat il y a encore quelques instants, retrouvent peu à peu de leur éclat.</p>
+        <p>Nous reprenons la route pour la Ville Griotte. Nous accélérons nos pas, mais nous tombons malgré tout sur d'autres Pokémon sauvages. Corben prend peu à peu confiance en lui, tant et si bien qu'il n'aura pas eu besoin d'une nouvelle potion jsuqu'à notre arrivée aux portes de la ville. À peine avons nous passé l'entrée qu'un vieillard m'interpelle.</p>
+        <p>"Hé ! Toi ! Le Dresseur avec le Kaiminus, viens par ici ! T'es nouveau dans le coin ? Je t'ai jamais vu avant ! Allez, pas de chichis, je vais te faire faire un rapide tour du propriétaire, ça devrait t'aider."</p>
+        <p>Pas le temps de répondre quoi que ce soit que le vieillard s'élance avec une énergie folle vers le Centre Pokémon. Je regarde Corben, qui me rend mon regard et part en courant vers le vieillard. J'imagine que je n'échapperai pas à cette visite guidée.</p>
+        <p>"Alors tu vois, ici c'est le Centre Pokémon, et là-bas c'est la Boutique Pokémon et..."</p>
+        <p>L'énergie dont fait preuve l'homme est touchante, depuis combien de temps n'a-t-il pas eu de nouvelles de sa famille ? Il regarde avec attention Corben pendant toute sa visite, le petit Pokémon l'intrigue et l'intéressé le lui rend bien, c'est aussi une première fois pour lui, après tout. Une fois la visite terminée, nous raccompagnons l'homme devant sa demeure.</p>
+        <p>"Merci les jeunes, ça m'a fait du bien de passer un peu de temps en vôtre compagnie. C'est pas tous les jours qu'on a de la visite, en ce moment. J'espère juste ne pas avoir abusé de votre temps.</p>
+        <p>- Pas d'inquiétudes à avoir de ce côté-là, nous sommes en voyage et avons bien le temps de nous accorder une petite visite. D'ailleurs, comment se fait-il que vous soyez dehors avec le confinement ? Vous n'avez pas peur d'attraper la maladie et d'y rester ?</p>
+        <p>- Tu sais mon petit, à mon âge, il ne me reste plus grand chose à perdre. Ma famille est loin, et depuis que je suis à la retraite et que j'ai fermé boutique, il ne me reste plus beaucoup d'occasions d'avoir un peu d'activité. Alors guetter les nouveaux arrivants et leur offrir les informations nécessaires à leur première visite, c'est un peu le seul hobby qu'il me reste. Tiens, par ailleurs, je vois que tes chaussures sont dans un piteux état, reste ici, j'ai quelque chose pour toi."</p>
+        <p>Il rentre chez lui, et nous attendons. Corben reste près de l'entrée et observe les fleurs que fait pousser le vieil homme dans ses jardinière. J'en profite pour téléphoner à ma mère et la rassure sur l'objectif de ma mission, je devrais être de retour ce soir. L'homme sort enfin, une boîte en carton à la main. Je raccroche rapidement mon Pokématos et le range dans mon sac.</p>
+        <p>"Tiens, ça te fera un petit souvenir de ta visite à la Ville Griotte et tu pourras dire que tu portes l'une des dernières paires du cordonnier du village."</p>
+        <p>À l'intérieur de la boîte se trouve une paire de chaussures de marche, les semelles sont solides et la confection générale dégage une robustesse certaine.</p>
+        <p>"Je ne sais comment vous remercier, elles sont superbes.</p>
+        <p>- Pas d'inquiétudes, petit. Porte-les avec fierté et continue ta route, ça sera toujours mieux que ces baskets miteuses que tu portes actuellement. Vas-y, essaie-les."</p>
+        <p>Piles à la bonne taille.</p>
+        <p>"L'oeil du professionnel ?"</p>
+        <p>Il esquisse un petit sourire, gratifie Corben d'une gratouille sous le menton et nous souhaite bonne route. Nous passons rapidement par le Centre Pokémon pour vérifier l'état de santé de Corben après ses premières rixes. L'infirmière ne détecte rien d'anormal et profitons de l'hospitalité du lieu pour nous reposer quelques instants avant de reprendre notre périple. Alors que nous approchons de la route 30, j'entends quelqu'un qui court. C'est le cordonnier.</p>
+        <p>"Un dernier souvenir, vu que c'est une première fois pour vous, une carte risque de vous venir en aide. Tends-moi ton Pokématos."</p>
+        <p>Je m'exécute, le vieil homme glisse un coupon à l'intérieur. Le Pokématos effectue une connexion au réseau et confirme quelques instants plus tard l'installation de la nouvelle fonction. Je remercie une nouvelle fois le vieux cordonnier et lui envoie un dernier signe de la main alors que nous nous éloignons sur la route 30.</p>
+      </div>
+      <a data-toggle="collapse" href="#road30AndReturnToBourGeon" aria-expanded="false" aria-controls="road30AndReturnToBourGeon"><h3>Pas d'omelette sans casser des oeufs</h3></a>
+      <div id="road30AndReturnToBourGeon"  class="collapse">
+        <p>La route 30 est similaire à la route 29, à ceci près qu'elle est plus fréquentée que cette dernière. Cela s'explique simplement, puisqu'elle regorge de jeunes Dresseurs en route pour Mauville, une des quelques cités de la région à disposer d'une arène. Il n'est donc pas rare d'y croiser des gamins s'affrontant pour savoir qui sera le plus fort et aura le droit de se frotter au Défi des Arènes en premier.</p>
+        <p>La route est l'occasion pour Corben et moi de nous frotter à nos premiers Pokémon insectes. Les Aspicot du coin ne sont pas très forts, mais leur aiguillon sécrète un venin que je préfèrerais ne pas voir infliger à mon compagnon de voyage. Heureusement pour Corben, ses combats répétés lui ont octroyé une technique qui lui sera bien utile pour s'en prémunir : Pistolet à O. Bien que l'attaque ne soit guère puissante, elle a le mérite de pouvoir garder les insectes à bonne distance et d'ainsi lui éviter d'avoir à risquer un corps à corps hasardeux.</p>
+        <p>Après avoir passé une butée, nous arrivons en vue d'une maison jouxtant un grand Noigrumier. Ces arbres endémiques de la région produisent des fruits utilisés depuis des temps immémoriaux pour la fabrication artisanale de notre plus cher outil de Dresseurs : la Pokéball. Je toque à la porte. Un homme entrouvre celle-ci et me demande la raison de ma présence.</p>
+        <p>"Je cherche un certain Monsieur Pokémon, serais-je arrivé à destination ?</p>
+        <p>- Pas du tout, jeune homme. Monsieur Pokémon habite un peu plus loin sur la route, tu as encore un peu de chemin à parcourir, lorsque tu arriveras à un embranchement, prends celui de droite et tu seras sur la bonne voie.</p>
+        <p>- Merci de l'information, monsieur. Je ne vous dérange pas plus, dans ce cas.</p>
+        <p>- Attends, attends, mon jeune ami, tu as un sac à Noigrumes ?</p>
+        <p>- Non, du tout. Je n'ai pas vraiment le temps de m'occuper de jouer les cueilleurs, en ce moment.</p>
+        <p>- Alors prends-les, voilà un sac à Noigrumes, à toi de gérer pour le temps ! En ce moment, les gens ne ramassent plus les Noigrumes, si on ne débrarasse pas les Noigrumiers de leurs fruits, ils finissent pas en produire de moins en moins jusqu'à ce que l'arbre devienne stérile, alors rends service à la nature et n'hésite pas à en cueillir une ou deux quand l'occasion se présente."</p>
+        <p>Je n'ai pas le temps de répondre à l'homme que celui-ci referme sa porte. Je me dirige sur le côté de sa maison et attrape donc un des fruits de l'arbre. L'homme me fait un signe d'approbation par sa fenêtre puis disparait. Je regarde Corben et lui lance :</p>
+        <p>"Curieuse rencontre, n'est-ce pas ?"</p>
+        <p>Il me regarde quelques instants et hoche doucement la tête avant de jeter un regard inquiet vers la maison. Nous reprenons la route vers la demeure de Monsieur Pokémon, et entendons au loin les bruits d'un combat entre deux Dresseurs alors que nous arrivons à l'embranchement dont nous avait parlé l'homme aux Noigrumes. Nous prenons à droite, comme indiqué. À mesure que nous avançons, les bruits des combats se font plus faibles et la végétation plus épaisse. Corben trouve l'occasion de disputer quelques nouveaux combats contre des Pokémon sauvages et d'affûter ses nouvelles capacités. Je m'étonne d'ailleurs de le voir développer une nouvelle technique, Frénésie, lors d'un combat. Bien que très faible au premier abord, celle-ci semble gagner en puissance à mesure que Corben encaisse des coups. Cela devrait venir en aide pendant des combats plus longs que ceux auxquels nous sommes habitués.</p>
+        <p>Nous sortons des hautes herbes et arrivons enfin en vue de la maison de Monsieur Pokémon. Ce dernier attend devant chez lui et me fait un grand signe de la main lorsqu'il nous voit enfin nous approcher. Nous faisons les présentations et il nous invite à entrer. À l'intérieur se trouve déjà un autre invité, assis à la table de Monsieur Pokémon et semblant prendre le thé. L'homme m'apparaît assez âgé, des cheveux blancs, de larges sourcils noirs et un regard sérieux habillent son visage. Je ne tarde pas à remarquer sa blouse blanche, similaire à celle du Professeur Orme. Il pose sa tasse sur la soucoupe et se lève avant de se diriger vers nous. Il se plante face à moi, me dévisage et s'attarde sur Corben. À la vue de mon petit compagnon, son visage s'illumine.</p>
+        <p>"Bien le bonjour, mon garçon, je me présente : Professeur Chen. Ton Kaiminus a l'air en bonne santé, cela fait plaisir à voir. Continue à t'en occuper de la sorte et il te le rendra bien. Et toi, qui es-tu ?</p>
+        <p>- Jaxom, enchanté Professeur. Je suis envoyé par Orme pour m'occuper de l'affaire dont Monsieur Pokémon voulait l'entretenir.</p>
+        <p>- Ah oui, n'oublions pas le plus important, reprend Monsieur Pokémon. Viens par ici, Jaxom."</p>
+        <p>Monsieur Pokémon m'entraîne au fond de la pièce principale, où il a installé une couveuse improvisée avec une lampe chauffante et un nid de Roucool récupéré il y a peu. Dans le nid, un oeuf de Pokémon. Celui-ci attire de suite mon regard, tant ses couleurs sont inhabituelles. La couleur de sa coquille est d'un blanc éclatant, parsemé de formes bleues et rouges.</p>
+        <p>"As-tu déjà vu un oeuf de la sorte, Jaxom ? me demande Chen.</p>
+        <p>- Jamais, ceux que j'ai pu voir par le passé étaient généralement dans des tons plus crême avec des tâches vertes.</p>
+        <p>- C'est bien ce qu'il me semblait, les oeufs des Pokémon de Kanto correspondent à la description que tu connais déjà, mais cet oeuf est une occurence inédite dans nos recherches. C'est bien pour ça que mon ami m'avait invité, dans l'espoir que je lui apporte une réponse. Malheureusement, je ne suis pas aussi expert sur la reproduction des Pokémon que peut l'être le jeune Orme, c'est pourquoi j'ai conseillé à Monsieur Pokémon de prendre contact avec lui.</p>
+        <p>- Tiens, prends-le et amène-le le plus vite possible auprès du Professeur Orme, me commande Monsieur Pokémon."</p>
+        <p>J'attrape l'oeuf et le place délicatement dans mon sac. Alors que je m'apprête à sortir, Chen m'interpelle et m'envoie un objet.</p>
+        <p>"Et Jaxom, attrape ça, quelque chose me dit que cela va t'être utile. À voir comment ton Kaiminus se porte, je pense que tu devrais tenter le Défi des Arènes. Cela t'amènera à croiser la route de nombreuses espèces de Pokémon et il me manque des données des espèces de ta région, et c'est là où le Pokédex entrera en jeu. Pense à m'envoyer ses données de temps en temps pour que je suive le progrès de tes recherches, mon numéro de téléphone est également inscrit dedans, dans le cas où tu aurais besoin d'un de mes conseils. Si le Professeur Orme te fait confiance, c'est que tu dois avoir un don pour l'élevage des Pokémon."</p>
+        <p>Je remercie le Professeur Chen et lui promets de lui envoyer mes résultats à mesure de mes avancées et me lance sur la route 30 pour amener l'oeuf à Orme. À peine ai-je le temps de mettre le pieds dehors que la sonnerie de mon Pokématos retentit.</p>
+        <p>"Allô... Allô ! Jaxom ! Tu es là ? Reviens vite au laboratoire, il y a eu un incident !"</p>
+        <p>Pas le temps de répondre quelque chose que le Professeur raccroche. J'attrape Corben dans mes bras et m'élance vers la Ville Griotte ! Je n'ai jamais entendu le Professeur dans un tel état de panique, quelque chose de grave à dû se produire, j'espère que tout le monde va bien. Je saute les butées qui me séparent de la Ville Griotte comme si ma vie en dépendait, et alors que j'allais sortir de la ville en direction de Bourg Geon, j'aperçois le jeune homme aux cheveux rouges qui me barre la route.</p>
+        <p>"Où est-ce que tu crois aller comme ça, minus ? Tu crois que parce que le Professeur t'a confié un Pokémon, t'es le plus fort ? Prépare-toi à combattre, il n'y a pas de place pour les faibles !"</p>
+        <p>Corben saute de mes bras et se met en position. Notre adversaire envoie un Germignon, Corben n'aura pas l'avantage pour ce combat, nous n'avons donc aucune raison de faire traîner celui-ci. Le Germignon rugit pour intimider Corben, mais nos combats l'ont grandement renforcé et quelques coups de griffes parviennent à régler la situation. Nous avons de la chance que le Germignon n'ait pas été plus entraîné, une attaque plante aurait eu tôt fait de mettre à mal mon Kaiminus.</p>
+        <p>"Tu as eu de la chance sur ce coup, minus, mais la prochaine fois on ne fera qu'une bouchée de vous ! lance-t-il."</p>
+        <p>Il part sans demander son reste, c'est alors que je remarque un objet tombé au sol : sa Carte Dresseur. À peine ayant eu le temps de la ramasser et de la porter à mes yeux qu'il revient vers moi à tout allure et m'arrache la carte des mains.</p>
+        <p>"Il vaudrait mieux pour toi que tu n'aies pas vu mon nom !"</p>
+        <p>Je détourne le regard à mesure qu'il s'éloigne et récupère Corben dans mes bras, notre course pour Bourg Geon n'est pas encore terminée.</p>
+      </div>
+      <a data-toggle="collapse" href="#robberyLaboratoryAndNewQuest" aria-expanded="false" aria-controls="robberyLaboratoryAndNewQuest"><h3>Un objectif : gagner les défis</h3></a>
+      <div id="robberyLaboratoryAndNewQuest" class="collapse">
+        <p>Enfin arrivés au laboratoire, je me précipite vers le Professeur. Un agent de police est à ses côtés.</p>
+        <p>"Ah ! Le coupable revient toujours sur les lieux du crimes ! Encore une affaire résolue pour le Brigadier Mallard ! Avoue, margoulin ! lance l'officier.</p>
+        <p>- Du calme voyons, c'est Jaxom, je l'ai envoyé faire une course chez Monsieur Pokémon, il travaille pour moi, le reprend le Professeur.</p>
+        <p>- Bien, bien, dans ce cas-là, jeune homme, aurais-tu en ta possession des informations dont tu aimerais nous faire part ?</p>
+        <p>- Jaxom, le Germignon du laboratoire a été volé, aurais-tu pu voir quelqu'un qui en possédait un non loin d'ici ? précisa Orme."</p>
+        <p>La réponse ne fait pas l'ombre d'un doute, le Germignon que nous avions affronté plus tôt Corben et moi devait être celui dérobé. Je m'empresse donc de faire part de mes observations au Brigadier. Les cheveux rouges, mi-longs, avec un sale caractère et des habits sombres. L'officier enregistre mon témoignage et conclut :</p>
+        <p>"Et tu n'aurais pas eu son nom, par hasard ?</p>
+        <p>- J'ai seulement eu le temps de lire son prénom sur la Carte Dresseur qu'il a laissé tomber à la fin de notre affrontement : Corona.</p>
+        <p>- Mon dieu, quel esprit malade peut-il nommer son enfant d'un tel patronime. Vivement qu'on le retrouve et que l'on coffre cette racaille."</p>
+        <p>Une fois tous les détails pris auprès du Professeur et moi-même, Mallard s'en alla. Le Professeur en profita pour examiner Corben et me demander le résultat de ma course chez Monsieur Pokémon. Je lui montrais l'oeuf et comme moi plus tôt, il n'en revint pas.</p>
+        <p>"Et bien, moi qui pensais que Monsieur Pokémon voulait encore me déranger pour une rumeur ou une broutille, il semble avoir mis en plein dans le mille, cette fois-ci. Cela va alimenter mes recherches pour un moment.</p>
+        <p>- C'est la conclusion qu'en a également tiré le Professeur Chen.</p>
+        <p>- Chen était là ? Sûrement de passage avant son émission de radio hedomadaire à Doublonville.</p>
+        <p>- Oui, et il m'a confié un appareil nommé Pokédex. Vous savez ce que c'est ?</p>
+        <p>- Et bien, riche journée pour toi, Jaxom. Le Pokédex est une encyclopédie numérique qui enregistre les données des Pokémon lorsque tu en croises la route. C'est un outil inventé par Chen pour faciliter les recherches, mais ils sont produits en petites quantités et confiés à quelques rares élus. Chen a dû voir quelque chose en toi qui lui a plu.</p>
+        <p>- Je dirais plutôt que c'est Corben qui lui a plu, il l'a méticuleusement observé lors de notre rencontre.</p>
+        <p>- Rien d'étonnant à cela, les Kaiminus sont une espèce rare dont la plupart des spécimens sauvages ne se trouve que dans des zones reculées de Johto, Chen n'a pas dû en voir beaucoup jusqu'ici.</p>
+        <p>- Il a dit que Corben se portait suffisamment bien pour qu'on puisse tenter le Défi des Arènes, aussi."</p>
+        <p>Orme posa le Pokémon sur un coussin.</p>
+        <p>"Il est vrai qu'il déborde d'énergie et semble s'être bien attaché à toi en peu de temps, mais es-tu certain de vouloir entâmer ce périple ? Mon assistant a dû te parler des problèmes de récupération qui affectaient les Pokémon ces derniers temps, soupira Orme d'un ton inquiet."</p>
+        <p>Corben s'approcha de moi et tira sur mon pantalon, faisant ensuite mine de se battre contre mes chaussures.</p>
+        <p>"En tous cas, lui a l'air partant, alors autant tenter l'aventure, les Dresseurs sont les seuls encore autorisés à parcourir librement la région et je n'ai pas envie de rester croupir à Bourg Geon, lui répondis-je."</p>
+        <p>Le Professseur acquiesça et donna une petite friandise à Corben pour l'encourager.</p>
+        <p>"Prends soin de lui, me dit-il, j'ai assez perdu de Pokémon pour aujourd'hui et je n'ai pas envie d'avoir plus de mauvaises nouvelles dans les prochains jours.</p>
+        <p>- Vous avez ma parole, Professeur. Nous avons procédé avec prudence aujourd'hui, et nous ne comptons pas relâcher notre attention.</p>
+        <p>- Bien, il est inutile de vous retenir, dans ce cas. Je t'appelerai lorsque j'aurais des nouvelles concernant l'oeuf, peut-être que je pourrais avoir de nouveau besoin de tes services. Prends soin de ton Kaiminus et faites bonne route. Et pense à prévenir ta mère, ça serait bien de lui dire que tu pars pour un long voyage !</p>
+        <p>- Les au-revoirs c'est vraiment pas mon truc, Professeur, mais j'y réfléchirai."</p>
+        <p>Nous sortions en direction de la route 29 et Johto nous tendait les bras ! J'aperçus Célesta qui sortant de chez elle. Elle accourut vers moi.</p>
+        <p>"Jaxom ! Tu reprends la route ? Tu penses t'absenter longtemps, dis ?</p>
+        <p>- Aucune idée, Célesta. Corben et moi nous lançons dans le Défi des Arènes, alors nous irons jusqu'où nous pourrons.</p>
+        <p>- Dans ce cas, tiens, c'est pour toi ! Si tu pars pour un long voyage, tu auras besoin de renforcer ton équipe, dit-elle en me tendant cinq Pokéballs.</p>
+        <p>- Merci Célesta, je te promets de les utiliser à bon escient."</p>
+        <p>Je la remerciais d'une petite tape sur son chapeau bouffant et lui offrais une potion.</p>
+        <p>"Tiens, c'est pas grand chose, mais peut-être que ça te viendra en aide si un jour tu décides d'entraîner ton Marill."</p>
+        <p>Je m'éloignais, Célesta nous regarda nous éloigner depuis les abords du village, jusqu'à ce que nous disparaissions sur la route 29. Au revoir Bourg Geon, la prochaine fois que nous nous reverrons, ce sera par mon échec ou par ma victoire face au Défi des Arènes !</p>
+        <p>Corben et moi reprenions la route pour la Ville Griotte, bien décidés à mener nos combats et renforcer notre équipe ! Notre première recrue fut une jeune Roucool capturée après quelques pas sur la route 29 et que je décidais de nommer Agnès, afin que l'intelligence de son homonyme lui apporte la sagesse dont elle pourrait avoir besoin lors de situations de crise. Puis décidant de tenter ma chance, je fis une rencontre sur le bas de la route 46. Quelle ne fut ma joie de découvrir une Racaillou que je m'empressais d'ajouter à nos forces. Celle-ci se prénommerait Sibeth, en l'honneur de la solidité avec laquelle une femme de légende avait bravé vents et marrées pour protéger les siens contre les plus véhémentes critiques. Une fois arrivés à la Ville Griotte, nous opérions un rapide passage au Centre Pokémon avant de nous entraîner jusqu'à la tombée de la nuit, laquelle finirait par s'ouvrir sur notre deuxième jour d'aventure.</p>
+      </div>
+      <!-- DAILY REPORT 1 -->
+      <div class="dailyReport bg-secondary">
+        <h3 class="titleStyle m-2">Rapport du jour 1</h3>
+        <div class="d-flex flex-row flex-wrap justify-content-around">
+          <p class="col-12 text-center font-weight-bold reportsTitles">État actuel de l'équipe :</p>
+          <div class="flex-column col-md-4">
+            <img class="img-fluid" src="./assets/img/CorbenKaiminus.png" alt="Sprite de Corben le Kaiminus">
+            <p class="text-center">Corben (niveau 11)</p>
+          </div>
+          <div class="flex-column col-md-4">
+            <img class="img-fluid" src="./assets/img/AgnèsRoucool.png" alt="Sprite de Agnès le Roucool">
+            <p class="text-center">Agnès (niveau 10)</p>
+          </div>
+          <div class="flex-column col-md-4">
+            <img class="img-fluid" src="./assets/img/SibethRacaillou.png" alt="Sprite de Sibeth le Racaillou">
+            <p class="text-center">Sibeth (niveau 10)</p>
+          </div>
+        </div>
+        <p class="text-justify m-2"><span class="font-weight-bold">Observations :</span> une grosse frayeur pour Corben lors de son premier combat avec un coup critique de l'enfer. Autrement tout roule jusqu'ici.</p>
+      </div>
+    </div>
+    <!-- DAY ONE'S END -->
+    <!-- DAY TWO -->
+    <div id="day2" class="mt-3">
+      <h2>22/03/2020 - Jour 2</h2>
+      <a data-toggle="collapse" href="#toMauville" aria-expanded="false" aria-controls="toMauville"><h3>Direction Mauville !</h3></a>
+      <div id="toMauville" class="collapse">
+        <p>La route 30 nous tendait une nouvelle fois les bras. Nous étions partis aux aurores du Centre Pokémon de la Ville Griotte afin d'avoir le temps de pousser l'entraînement d'Agnès et Sibeth au maximum. Je savais que le Champion de Mauville, Albert, était réputé pour ses Pokémon oiseaux et que mon nouveau duo serait la clé de voûte de ma stratégie lors de mes affrontements au sein de l'arène. Nous nous dirigions vers le nord et bifurquions sur la branche opposée à celle menant vers la demeure de Monsieur Pokémon lorsque j'entendais une voix m'interpeller.</p>
+        <p>"Hé, toi, là ! Tu crois pouvoir te balader sans combattre ? T'es un Dresseur ? Alors sors tes Pokémon, je te défie !"</p>
+        <p>Un des gamins qui passaient leurs journées à combattre le long de la route m'avait repéré. Je me mettais en place et lançait Sibeth au combat, un Pokémon roche n'aurait aucun mal à sortir vainqueur d'un affrontement contre un vulgaire Rattata. Le gamin tentait tant bien que mal d'infliger des dégâts à Sibeth, mais elle avait clairement l'ascendant et parvint à vaincre sans mal son opposant. Cette première victoire augurait une traversée sans accrocs jusqu'à Mauville.</p>
+        <p>Le gamin voulut prendre mon numéro de Pokématos pour prendre sa revanche un jour prochain, promettant que son Rattata deviendrait le meilleur Rattata que l'on connaîtrait, je refusais d'accèder à sa requête, prétextant que si aujourd'hui je n'avais déjà eu aucun mal à le vaincre, ses prochains essais se solderaient de la même façon. Sibeth n'en était qu'au début de son entraînement et n'avait déjà fait qu'une bouchée de son Pokémon. Je n'ai rien contre le courage, mais un combat perdu d'avance ne lui servirait pas à progresser. Je lui recommandais de revoir sa stratégie en essayant d'apporter un peu de variété à la composition de son équipe et lui promettais de lui accorder sa revanche si l'on se croisait à nouveau. Nous nous quittions à peine qu'un autre gamin surgissait bien décidé lui aussi à en découdre, motivé par le combat qu'il venait d'apercevoir.</p>
+        <p>Une nouvelle occasion pour Sibeth d'améliorer sa maîtrise du combat ! Bien que le gamin disposait de deux Pokémon, elle n'éprouva aucune difficulté à s'en sortir et le gamin dû se précipiter vers le Centre Pokémon de la Ville Griotte. Quelques minutes plus tard, nous rencontrions un scout et ses Pokémon insectes. Sa tentative de ralentir Sibeth avec la soie de ses Pokémon étaient une bonne idée. Malheureusement pour le scout, sa force ne repose pas sur la rapidité de ses mouvements, mais plutôt sur sa capacité à encaisser les coups et à en asséner de puissants en retour. C'est d'ailleurs au cours de ce combat que Sibeth développait la capacité Jet-Pierres, si l'adversaire était trop loin et qu'elle peinait à s'en approcher, elle pourrait au moins lui faire goûter à la violence de son projectile rocailleux.</p>
+        <p>La poussière du combat retombée, nous repartions en direction de Mauville. À mi-chemin de notre destination, l'Antre Noire borde la jonction entre la route 30 et la route 31. Ce réseau de cavernes est réputé pour être l'habitat de Pokémon nyctalopes ou ayant développé d'autres moyens de se repérer dans l'obscurité. L'état actuel de mon équipe ne me permettrait pas de la traverser autrement qu'à l'aveugle. Alors que j'hésitais à y tenter quelques pas, un homme campant près de l'Antre Noire m'avertit que les moines de la Tour Chétiflor de Mauville avaient développé une technique permettant d'illuminer les lieux les plus sombres et qu'ils étaient généralement disposés à la transmettre aux Dresseurs qui décidaient de faire étape chez eux, s'ils prouvaient leur valeur. Y voyant l'occasion de perfectionner l'entraînement et de vaincre les ténèbres du lieu je décidais de continuer directement jusqu'à Mauville.</p>
+        <p>C'est en traversant les dernières étendues d'hautes herbes que je tombais sur une Chétiflor, préférant jouer la sécurité, j'envoyais Corben affaiblir le Pokémon à coup de Pistolet à O, espérant ainsi mieux contrôler les dégâts infligés et faciliter sa capture. Les Fouets Liane du Chétiflor mettait Corben à mal, mais il tenait bon, et pouvais ainsi tenter de capture le Pokémon. Après quelques balancement, la Pokéball confirmait la capture du Chétiflor, dont l'appendice buccal m'inspira le charmant surnom de Marlène. Notre nouvelle recrue en poche, nous terminions notre route, seulement interrompus par un nouveau scout que Sibeth pris soin de renvoyer au Centre Pokémon à coup de Jet-Pierres.</p>
+      </div>
+      <a data-toggle="collapse" href="#bellsproutTowerAndTraining" aria-expanded="false" aria-controls="bellsproutTowerAndTraining"><h3>L'ascension</h3></a>
+      <div id="bellsproutTowerAndTraining" class="collapse">
+        <p>Après un rapide passage au Centre Pokémon de Mauville, je me dirigeais vers la Tour Chétiflor. L'infirmière m'avait dit de me diriger vers le nord une fois sorti du Centre, et la taille de l'édifice ne pourrait que me conforter dans la direction à prendre. Mauville est une petite bourgade de Johto, entourée d'arbres centenaires et parsemée d'étendues d'eau. Malgré l'agitation habituelle qui régnait autrefois, émulée par l'afflux de Dresseurs se rendant à l'arène, la ville a gardé de son animation. La Boutique Pokémon semble toujours en activité, et l'École des Dresseurs, l'un des rares lieux d'enseignement de la région, a réussi à maintenir un service minimum malgré les demandes du Conseil. Même si les rues sont vides, Mauville continue d'avoir une vie, invisible depuis l'extérieur.</p>
+        <p>Le chemin jusqu'à la Tour Chétiflor était court, et l'architecture du lieu était des plus étonnante. Cette grande tour avait été bâtie autour d'un pilier central chancelant, afin de rendre hommage au Pokémon dont elle tenait le nom. Le rythme de basculement du pilier offrait au lieu une mélodie particulière, les longs grincements du bois s'apparentaient à une lente complainte sur laquelle les moines ayant élus domicile au sein de cette curiosité architecturale avait basé leur vie et leur philosophie. La tour ne pliait pas, elle se mouvait au grès de son pilier et traversait tranquillement les âges, affrontant le temps et ses sévices.</p>
+        <p>Je poussais les portes d'entrée du lieu et me retrouvais face au gigantesque pilier. Un moine me souhaita la bienvenue.</p>
+        <p>"Bienvenue à toi jeune Dresseur, que nous vaut la surprise de ta visite ? me questionna-t-il.</p>
+        <p>- J'ai entendu dire que vous offriez votre savoir concernant une technique permettant d'illuminer les endroits les plus sombres et j'aimerais l'apprendre.</p>
+        <p>- Il est juste, en effet, que nous possédons une telle technique. Cependant, si tu souhaites en acquérir la maîtrise par notre doyen, il te faudra grimper au dernier étage de la tour tout en passant les épreuves des moines sur ton chemin. Pour commencer ta quête de savoir, emprunte l'échelle au fond de cette salle et accède à l'étage supérieur, la suite de ton ascension ne dépendra que de toi."</p>
+        <p>Je remerciais le moine pour ses renseignements et suivais la voie qu'il m'avait désigné. Les cloisons de washi séparant le couloir intérieur du couloir extérieur de la salle principale m'apparaissait à mesure que je montais l'échelle, je prenais quelques instants pour observer le spectacle du pilier central. Il donnait l'impression que le reste de l'édifice suivait lui aussi son mouvement chancelant, le grincement des lates de bois disposées au sol des différents étages conférait au lieu une harmonie sonore étonnante, s'alliant avec sa pièce centrale pour créer une ode ancestrale.</p>
+        <p>J'atteignais le premier étage et un moine me faisait face depuis l'autre côté de la pièce. Je m'avançais prudemment vers lui, lorsqu'arrivé à quelques pas de lui, je le voyais attraper une Pokéball à son collier. Les épreuves seront de force, apparemment ! Le moine envoya un Chétiflor et je répondis par Agnès, un Pokémon oiseau aurait l'avantage face au type plante. Il ne fallut pas plus de quelques coups à Agnès pour confirmer sa supériorité et pousser le moine à renvoyer le Chétiflor dans sa Pokéball. Je restais quelques secondes aux aguets attendant un signe de sa part, craignant que le combat ne continue.</p>
+        <p>Il rangea sa Pokéball, s'asseya et me montra une nouvelle échelle dans un coin de la pièce. Je rappelais Agnès et pris le chemin de la suite de mon périple. L'échelle conduisait au rez-de-chaussée, mais me fit attérir de l'autre côté des cloisons de washi. Je longeais l'étroit couloir formé par celles-ci et atteignit un nouveau point d'ascension, gardé une fois de plus par un moine. Agnès m'apporta une fois encore la victoire me permettant de procédé à l'étape suivante, les moines semblant tous posséder des Chétiflor et mon Pokémon ne semblant toujours pas éprouver de difficulté à les mettre en déroute.</p>
+        <p>Les étages suivants se déroulèrent de la même façon, chaque échelle était gardée par un moine, l'ascension n'étant interrompue que par le passage de quelques Rattata qui devaient avoir élu domicile dans les combles. Après de nombreux combats, j'atteignais enfin le dernier étage de la tour. Trois moines montaient la garde du couloir menant à la chambre du doyen, il ne posèrent que peu de difficulté à Agnès qui les défit avec une facilité renforcée par ses précédents combats. Alors que je passais le groupe de moines, j'aperçus une chevelure rouge malheureusement familière.</p>
+        <p>"Alors, minus, on est venu apprendre la technique de l'ancien ? Je viens tout juste de lui mettre une raclée, mais ce vieux croulant ne veut pas s'arrêter de rabacher ses inepties à propos des relations de confiance et d'amour entre un Dresseur et ses Pokémon. Les Pokémon servent à combattre, les faibles ne sont d'aucun intérêt. D'ailleurs, t'as de la chance que je n'ai pas le temps de m'occuper de ton cas, mais tu ne perds rien pour attendre. La prochaine fois qu'on se croisera, ça sera à ton tour de goûter à la défaite !"</p>
+        <p>Il me rentra dans l'épaule et glissa rapidement par l'échelle à l'arrière de la salle. Cette rencontre ne serait pas la dernière, c'est certain. Nous semblions liés d'une façon ou d'une autre, mais je ne laisserais pas cette tête-brûlée me miner le moral, d'autant que les autorités étaient sur ses traces, alors autant les laisser gérer la situation.</p>
+        <p>Je m'approchais de la chambre du doyen. Celui-ci m'accueillit chaleureusement et me proposa de m'asseoir quelques instants avec lui. Il m'offrit une tasse de thé et nous partageâmes un long moment de discussion. Il me fit part de son inquiétude à propos des Pokémon de Corona, arguant que leur force n'était pas en reste, mais que leur Dresseur ne leur accordait que peu d'égards en vue des efforts auxquels il les soumettait.</p>
+        <p>"Et toi, jeune Dresseur, j'imagine que tu n'es pas seulement ici pour faire la conversation avec un vieux moine, n'est-ce pas ?</p>
+        <p>- Effectivement, j'ai entâmé l'ascension de vôtre tour car on m'a rapporté que vous pourriez m'enseigner une technique capable même d'illuminer l'Antre Noir.</p>
+        <p>- Tu as été bien guidé, mon garçon, je peux effectivement t'enseigner cette technique, mais avant cela, tu devras affronter l'ultime épreuve de la Tour Chétiflor.</p>
+        <p>Et quelle est-elle ? demandais-je alors que le doyen commençait à se lever.</p>
+        <p>- Montre-moi le lien qui t'unit à tes Pokémon !"</p>
+        <p>Le vieil homme se propulsa en arrière d'un bond d'une étonnante vitesse et envoya sa Pokéball. Un Chétiflor en était sorti et Agnès serait donc de nouveau en première ligne. Le Chétiflor du vieux moine témoignait d'un meilleur entraînement que ceux des moins rencontrés jusqu'alors et demanda à Agnès un peu plus d'application qu'elle n'avait dû en mobiliser jusqu'alors. Elle parvint tout de même à le mettre au tapis sans subir de blessure majeure. Le moine rappela son Chétiflor et alors que je pensais le combat terminé, ce dernier appela un Hoothoot.</p>
+        <p>Je rappelais Agnès à sa Pokéball et envoyais Sibeth se charger du nouvel arrivant. Le Pokémon hibou profita de l'avantage de sa vitesse pour endormir Sibeth et lui asséner quelques attaques. La solidité du Racaillou la protégea des offensives de l'adversaire et elle tenta un Jet-Pierres sur le Hoothoot dès qu'elle eut repris ses esprits. La chance joua contre nous, le Pokémon esquiva l'attaque et lança une nouvelle fois son hypnose sur Sibeth. Elle subit de nouveau une ruée du Pokémon adverse et s'en tira avec quelques égratignures sur son corps de rocailleux avant de s'extirper de sa torpeur. Sibeth pu retenter un Jet-Pierres qui, cette fois-ci, fit mouche. La violencr du coup provoqua directement la mise au tapis du hibou et le doyen nous confirma notre victoire.</p>
+        <p>En récompense de notre victoire, nous obtînmes le Capsule Technique Flash et le moine nous indiqua une Corde Sortie pour revenir plus rapidement à l'entrée de la Tour. Nous le remercions pour son aide et il nous gratifia d'encouragements pour la suite de nos aventures, ayant pu constater notre détermination et nos liens grandissant. Il ne nous restait plus que deux choses à faire : nous entraîner et défier l'arène de Mauville !</p>
+      </div>
+      <a data-toggle="collapse" href="#albertsChallenge" aria-expanded="false" aria-controls="albertsChallenge"><h3>Le défi d'Albert</h3></a>
+      <div id="albertsChallenge" class="collapse">
+        <p>Le Champion de Mauville, Albert, était connu pour son utilisation des Pokémon oiseaux. Afin de l'affronter dans des conditions optimales, je prévoyais de fonder ma stratégie principale sur deux de mes Pokémon : Sibeth et Agnès. Le type roche de Sibeth lui donnerait un avantage certain face aux Pokémon d'Albert, mais des rumeurs faisaient état d'une technique capable de mettre à mal les Pokémon de types roche et électriques. En recoupant mes tables des types, je déduisis que la technique d'Albert serait du type sol, et c'est là qu'Agnès rentrerait en jeu, son type vol l'immuniserait à cette capacité et lui permettrait de prendre le relais de Sibeth en cas de besoin.</p>
+        <p>Commença alors une longue session d'entraînement dans les hautes herbes de la route 31, Sibeth combattu tant qu'elle le put jusqu'à apprendre Lance-boue, une capacité affaiblissant les attaques électriques, ainsi que Poliroche, lui permettant d'augmenter drastiquement sa vitesse, ce qui aurait sans doute son utilité à l'arène. Vint ensuite le tour d'Agnès, son entraînement fut plus ardu, un Roucool possédant une constitution bien moins robuste que celle d'un Racaillou, il fallu faire plusieurs allers et retours au Centre Pokémon situé à l'entrée de Mauville pour m'assurer de son état.</p>
+        <p>Après plusieurs heures d'entraînement, Agnès vainquit un ultime Coconfort et put évoluer en Roucoups. Corben, fasciné par le changement de forme du minoiseau sollicita lui aussi mon attention pour s'entraîner. Pokémon après Pokémon, le petit Kaiminus fit une progression vertigineuse, développant les capacités de sa mâchoire jusqu'à lui aussi être capable de changer de forme, sa petite stature faisant alors place à une carrure plus imposante de Crocrodil. L'équipe était en place, les Pokémon motivés et notre détermination au zénith. Cette arène ne serait pas un obstacle !</p>
+        <p>J'effectuais un dernier passage au Centre Pokémon avant de prendre la direction de l'arène. Sibeth me suivait de près, manifestant progressivement son impatience jusqu'à notre arrivée face à notre nouveau défi. Nous passions la porte et découvrions l'intérieur du bâtiment, l'extérieur modeste avait laissé place à un gigantesque intérieur où un parcours de dalles de verre et de bois situé à plusieurs mètres de haut dominait le sol où nous étions. Au bout du chemin trônait une imposante plateforme, où se déroulerait sans nul doute l'affrontement final.</p>
+        <p>Nous empruntions l'ascenseur pour accèder au parcours. Dès la sortie, j'avais pu voir que la route menant à notre Champion serait gardée de deux aspirants. Si eux aussi utilisaient des oiseaux, alors nous n'aurions aucun problème à rejoindre Albert. Mes doutes se confirmaient avec les victoires de Sibeth sur les Roucool et Piafabec adverses. Elle n'en fit qu'une bouchée à l'aide de ses Jet-Pierres et nous ne tardîmes pas à atteindre la plateforme finale.</p>
+        <p>"Félicitations pour m'avoir atteint aussi vite, Dresseur. Mais ne crois pas que notre combat sera aussi facile que les deux précédents. Tu plieras face aux attaques de mes gracieux Pokémon oiseaux ! nous lança Albert.</p>
+        <p>- C'est ce qu'on va voir, j'espère pour toi que mettre un masque ne sera pas un geste trop technique pour cacher ta défaite! rétorquais-je."</p>
+        <p>J'envoyais Sibeth, Albert evoyait un Roucool. Il était temps de mettre notre entraînement et ma stratégie à l'épreuve, Sibeth devait profiter du démarrage en douceur d'Albert pour placer deux Poliroche et obtenir une vitesse nécessaire pour lui garantir l'ascendant sur le reste du match. Le Roucool tentait de charger le Racaillou de toutes ses forces, Sibeth encaissa sans broncher et pu placer son premier Poliroche. Son gain de vitesse lui permis d'enchaîner directement avec le deuxième avant même que le Roucool ne tente un deuxième assaut. Ce dernier souleva le sable au sol à grands coups d'ailes et l'envoya au visage de Sibeth. Elle eût un mouvement de recule, ses yeux étaient touchés. L'oiseau décrivait des cercles réguliers autour d'elle, cherchant à lui faire perdre ses repères.</p>
+        <p>"Sibeth, c'est le moment, envoie une pierre droit devant toi ! lui criais-je alors que le Roucool s'apprêtait à réaliser un nouveau passage."</p>
+        <p>Elle se saisit rapidement d'un rocher et l'envoya de toute ses forces face à elle, le Roucool fut touché directement par le tir de Sibeth et vint s'écraser contre le mur de l'arène. Albert eût tout juste le temps de rappeler le petit Pokémon à sa Pokéball avant qu'il ne vienne s'effondrer au sol.</p>
+        <p>"Tu n'y vas pas de main morte, à ce que je vois ! Tant mieux, ça faisait longtemps que j'attendais un Dresseur qui me mette un peu à l'épreuve ! Roucoups, à toi ! cria Albert alors qu'il lançait frénétiquement sa Pokéball."</p>
+        <p>L'oiseau d'Albert était impressionnant, un spécimen d'une rare prestance dont l'envergure gigantesque des ailes oblitérait littéralement la présence de Sibeth. Chacun de leurs battements soulevaient du sol une vague impressionante de sable et de poussière, le risque de faire durer le combat était trop grand, mais Sibeth ne serait peut-être pas en état de conclure rapidement. Le Roucoups prit son envol, sa trajectoire ératique était difficile à lire et mon Racaillou avait déjà du mal à voir correctement, nous allions devoir jouer le tout pour le tout !</p>
+        <p>"Roucoups ! Lance Coud'boue ! ordonna le Champion."</p>
+        <p>Le Pokémon immobilisait sa course et préparait son attaque, c'était le moment ou jamais !</p>
+        <p>"Sibeth, Jet-Pierre, mets-y tout ce que tu as !"</p>
+        <p>Alors même que l'attaque du Roucoups commençait à partir, Sibeth attrapa un roc énorme et l'envoya avec une fulgurance rare au travers du Coud'boue. Le rocher brisa l'attaque, anéantissant tout espoir de la voir toucher sa cible et vint frapper l'oiseau de plein fouet. Le fracas de la silouhette ailée contre le sol ne laissa place à aucun doute : le Roucoups ne se relèverait pas de lui-même. J'ordonnais à Sibeth de retirer son projectile du corps du Pokémon. Albert vint à la rescousse de son Roucoups, l'attaque de Sibeth avait été suffisamment violente pour le mettre au tapis en un coup. J'offrais à Albert une potion, qu'il déclina poliement alors qu'il sortait un rappel de sa poche.</p>
+        <p>"Ne t'en fais pas, il en a vu d'autres. J'espère juste qu'il pourra reprendre son envol rapidement, me réconforta-t-il.</p>
+        <p>- Tu veux que je t'aide à le transporter jusqu'au Centre Pokémon ?</p>
+        <p>- Non, ça ira, je vais le rappeler dans sa Pokéball et y aller seul après t'avoir remis ça. Félicitations pour ta victoire, voici le Badge Zéphyr et la CT Coud'boue. Ça pourrait te venir en aide pour la suite de ton parcours."</p>
+        <p>Je remerciais Albert et prenais congé. À la sortie de l'arène, je recevais un coup de fil du Professeur Orme.</p>
+        <p>"Allô, Jaxom ? Ici Orme, tu m'entends ?</p>
+        <p>- Oui, Professeur. Je vous écoute, qu'est-ce qu'il y a ?</p>
+        <p>- J'ai eu de nouvelles informations à propos de l'oeuf que tu m'as rapporté de chez Monsieur Pokémon. Va à la Boutique Pokémon de Mauville, un de mes assistants t'y attend, il t'expliquera tout.</p>
+        <p>- Je m'y rends de ce pas, alors.</p>
+        <p>- Merci Jaxom, au revoir.</p>
+        <p>- Au revoir Professeur."</p>
+        <p>Une fois rendu à l'échoppe, l'assistant m'aborda. Il avait en sa possession ce qu'ils avaient décidé d'appeler l'Oeuf Mystère. Pour élucider leurs questionnements, ils avaient besoin que l'oeuf reste en compagnie de Pokémon énergiques pour qu'il puisse se développer et à terme, éclore. J'acceptais cette nouvelle mission et promettais à l'assistant de tenir leur équipe au courant si l'oeuf venait à éclore. Je prenais congé et après l'achat de quelques fournitures sortais de la boutique. En sortant, je tombais nez-à-nez avec une femme en kimono. Elle observa avec intérêt l'Oeuf Mystère, puis me déclama quelques vers énigmatiques avant de s'en aller. Je pris la voie du Centre Pokémon de Mauville afin de passer la nuit avant de reprendre ma route, me posant en chemin mille questions concernant cette dernière rencontre.</p>
+      </div>
+      <!-- DAILY REPORT 2 -->
+      <div class="dailyReport bg-secondary">
+        <h3 class="titleStyle m-2">Rapport du jour 2</h3>
+        <div class="d-flex flex-row flex-wrap justify-content-around">
+          <p class="col-12 text-center font-weight-bold reportsTitles">État actuel de l'équipe :</p>
+          <div class="flex-column col-md-4">
+            <img class="img-fluid" src="./assets/img/CorbenCrocrodil.png" alt="Sprite de Corben le Crocrodil">
+            <p class="text-center">Corben (niveau 18)</p>
+          </div>
+          <div class="flex-column col-md-4">
+            <img class="img-fluid" src="./assets/img/AgnèsRoucoups.png" alt="Sprite de Agnès le Roucoups">
+            <p class="text-center">Agnès (niveau 18)</p>
+          </div>
+          <div class="flex-column col-md-4">
+            <img class="img-fluid" src="./assets/img/SibethRacaillou.png" alt="Sprite de Sibeth le Racaillou">
+            <p class="text-center">Sibeth (niveau 18)</p>
+          </div>
+          <div class="flex-column col-md-4">
+            <img class="img-fluid" src="./assets/img/MarlèneChetiflor.png" alt="Sprite de Marlène le Chétiflor">
+            <p class="text-center">Marlène (niveau 10)</p>
+          </div>
+          <div class="flex-column col-md-4">
+            <img class="img-fluid" src="./assets/img/TogepiEgg.png" alt="Sprite de Oeuf de Togepi">
+            <p class="text-center">Oeuf mystère</p>
+          </div>
+        </div>
+        <p class="text-justify m-2"><span class="font-weight-bold">Observations :</span> comme prévu, l'entraînement du jour 2 a largement avantagé les membres de l'équipe en ayant bénéficié. Le reste du challenge ne devrait donc pas nécessiter d'autres séances aussi intensives. À noter également la survie miraculeuse de CassTaMère qui s'est jouée à 3 PV lors de sa rencontre avec l'Insécateur d'Hector.</p>
+      </div>
+    </div>
+    <!-- DAY'S TWO END -->
+    <!-- DAY THREE -->
+    <div id="day3" class="mt-3">
+      <h2>24/03/2020 - Jour 3</h2>
+      <a data-toggle="collapse" href="#toEcorcia" aria-expanded="false" aria-controls="toEcorcia"><h3>En route pour Ecorcia !</h3></a>
+      <div id="toEcorcia" class="collapse">
+      </div>
+      <a data-toggle="collapse" href="#ramolossWell" aria-expanded="false" aria-controls="ramolossWell"><h3>La queue qui valait un million de ₽</h3></a>
+      <div id="ramolossWell" class="collapse">
+      </div>
+      <a data-toggle="collapse" href="#ecorciaArena" aria-expanded="false" aria-controls="ecorciaArena"><h3>Correction de bugs</h3></a>
+      <div id="ecorciaArena" class="collapse">
+      </div>
+      <!-- DAILY REPORT 3 -->
+      <div class="dailyReport flex-row bg-secondary">
+        <h3 class="titleStyle m-2">Rapport du jour 3</h3>
+        <div class="d-flex flex-wrap justify-content-around">
+          <p class="col-12 text-center reportsTitles">État actuel de l'équipe :</p>
+          <div class="flex-column col-md-4">
+            <img class="img-fluid" src="./assets/img/CorbenCrocrodil.png" alt="Sprite de Corben le Crocrodil">
+            <p class="text-center">Corben (niveau 18)</p>
+          </div>
+          <div class="flex-column col-md-4">
+            <img class="img-fluid" src="./assets/img/AgnèsRoucoups.png" alt="Sprite de Agnès le Roucoups">
+            <p class="text-center">Agnès (niveau 18)</p>
+          </div>
+          <div class="flex-column col-md-4">
+            <img class="img-fluid" src="./assets/img/SibethRacaillou.png" alt="Sprite de Sibeth le Racaillou">
+            <p class="text-center">Sibeth (niveau 18)</p>
+          </div>
+          <div class="flex-column col-md-4">
+            <img class="img-fluid" src="./assets/img/MarlèneChetiflor.png" alt="Sprite de Marlène le Chétiflor">
+            <p class="text-center">Marlène (niveau 16)</p>
+          </div>
+          <div class="flex-column col-md-4">
+            <img class="img-fluid" src="./assets/img/CassTaMèreLainergie.png" alt="Sprite de CassTaMère le Lainergie">
+            <p class="text-center">CassTaMère (niveau 15)</p>
+          </div>
+          <div class="flex-column col-md-4">
+            <img class="img-fluid" src="./assets/img/TogepiEgg.png" alt="Sprite de Oeuf de Togepi">
+            <p class="text-center">Oeuf mystère</p>
+          </div>
+        </div>
+        <a class="reportsTitles pcBoxes d-flex justify-content-center font-weight-bold m-2" data-toggle="collapse" href="#reportDay3PCState" aria-expanded="false" aria-controls="reportDay3PCState">Les Pokémon en attente dans le PC</a>
+        <div id="reportDay3PCState" class="collapse m-2 bg-dark rounded">
+          <div class="d-flex flex-row flex-wrap justify-content-around">
+            <div class="flex-column col-md-4">
+              <img class="img-fluid" src="./assets/img/TergescentOnix.png" alt="Sprite de Tergescent l'Onix">
+              <p class="text-center">Tergescent (niveau 6)</p>
+            </div>
+            <div class="flex-column col-md-4">
+              <img class="img-fluid" src="./assets/img/Jean-Mi_Rattata.png" alt="Sprite de Jean-Mi' le Rattata">
+              <p class="text-center">Jean-Mi' (niveau 6)</p>
+            </div>
+            <div class="flex-column col-md-4">
+              <img class="img-fluid" src="./assets/img/PauloNosferapti.png" alt="Sprite de Paulo le Nosferapti">
+              <p class="text-center">Paulo (niveau 6)</p>
+            </div>
+          </div>
+        </div>
+        <p class="text-justify m-2"><span class="font-weight-bold">Observations :</span> la grosse séance d'entraînement précédant la première arène a peut-être été un excès de zèle, la suite de l'aventure sera sûrement parcourue de manière un peu plus détendue. J'ai aussi oublié de capturer un Pokémon à la route 30, ce qui n'est pas un drâme et ne devrait pas poser de problème pour le bon déroulé du challenge.</p>
+      </div>
+    </div>
+    <!-- DAY THREE'S END -->
+  </div>
+  <!-- ADVENTURE'S END -->
+  <!-- FOOTER -->
+  <footer id="end" class="d-flex justify-content-around">
+    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#disclaimerModal">Avertissements</button>
+    <div class="modal" id="disclaimerModal" tabindex="-1" role="dialog" aria-labelledby="disclaimerModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h5 class="modal-title text-danger font-weight-bold" id="disclaimerLabel">Avertissements</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-justify">
+            <p>COVID Adventure est un projet ayant pour but premier de distraire son auteur et son entourage durant la période de confinement liée à la crise sanitaire du COVID-19. Il n'est en aucun cas affilié à Nintendo, Game Freaks ou The Pokémon Company dont la licence Pokémon et ses personnages appartiennent.</p>
+            <p>L'auteur de COVID Adventures assume son rôle parodique ainsi que les blagues de mauvais goût qui pourraient survenir au fil de ses lignes. Aussi, si vous craignez d'être un peu sensible et que vous ne vous y retrouvez pas dans ces écrits, ne vous forcez pas à les lire, personne ne vous en voudra.</p>
+            <p>Si vous souhaitez faire part de vos remarques constructives ou partager votre ressenti, vous êtes les bienvenus et pouvez le faire <a href="mailto:thibault.grimoux@gmail.com?subject=COVID%20Adventures" target="_blank" class="font-weight-bold">par ici</a>.</p>
+            <p>Sur ces bonnes paroles, bonne lecture à tous et prenez soin de vous. <i class="fas fa-kiss-wink-heart text-danger"></i></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#bonusModal">BONUS</button>
+    <div class="modal" id="bonusModal" tabindex="-1" role="dialog" aria-labelledby="bonusModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h5 class="modal-title text-success font-weight-bold" id="bonusLabel">BONUS</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-justify d-flex flex-wrap justify-content-center">
+            <p>L'excellente parodie animée Pokémon Golder de <a href="https://www.youtube.com/channel/UCU23CAa9oKtxRVvBMkgIanQ" target="_blank" title="vers la chaîne YouTube de MattyBurrito">MattyBurrito</a> !</p>
+            <iframe class="mb-5" src="https://www.youtube.com/embed/o2agjv7872w" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="mb-5" src="https://www.youtube.com/embed/yvML_PMr6L4"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/Hm5Jlnq8NHk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER'S END -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
