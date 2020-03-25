@@ -57,7 +57,7 @@ footer {
   src: url("../fonts/PokemonHollow.woff") format("woff"),
   url("../fonts/PokemonHollow.woff2") format("woff2");
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 920px){
   footer {
     padding-bottom: 4.5rem;
   }
