@@ -20,7 +20,7 @@
 </head>
 <body id="beginning" class="bg-dark" data-spy="scroll" data-target="#navbarCA" data-offset="0">
   <!-- NAV -->
-  <nav id="navbarCA" class="navbar flex-column">
+  <nav id="navbarDesktop" class="navbar flex-column">
     <a href="#beginning"><i class="fas fa-arrow-alt-circle-up fa-3x text-light"></i></a>
     <ul id="navList" class="nav nav-pills flex-column">
       <li class="nav-item"><a class="nav-link" href="#day1">Jour 1</a></li>
@@ -30,18 +30,21 @@
     <a href="#end"><i class="fas fa-arrow-alt-circle-down fa-3x text-light"></i></a>
   </nav>
   <!-- NAV MOBILE -->
-  <nav class="row navbar navbar-expand-md justify-content-center fixed-bottom" id="navbarMobileMode">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobileContent" aria-controls="navbarMobileContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"><i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-      </span>
-    </button>
-    <div id="navbarMobileContent">
+  <nav class="row navbar navbar-expand-md justify-content-around" id="mobileNav">
+    <a class="navbar-toggler row justify-content-center" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fa fa-bars fa-2x text-light" aria-hidden="true"></i></span>
+    </a>
+    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+      <div class="row justify-content-around">
+      <a href="#beginning" class="col-3 align-self-center"><i class="fas fa-arrow-alt-circle-up fa-3x text-light"></i></a>
       <ul class="nav nav-pills flex-column">
         <li class="nav-item"><a class="nav-link" href="#day1">Jour 1</a></li>
         <li class="nav-item"><a class="nav-link" href="#day2">Jour 2</a></li>
         <li class="nav-item"><a class="nav-link" href="#day3">Jour 3</a></li>
       </ul>
+      <a href="#end" class="col-3 align-self-center"><i class="fas fa-arrow-alt-circle-down fa-3x text-light"></i></a>
     </div>
+  </div>
   </nav>
   <!-- NAV'S END -->
   <div class="container">
@@ -74,7 +77,7 @@
   <!-- INTRODUCTION'S END -->
   <!-- ADVENTURE -->
   <div class="container">
-    <p id="adventureBegins" class="m-5">À présent, place à l'aventure !</p>
+    <p class="mb-5 mt-5 reportsTitles">À présent, place à l'aventure !</p>
     <p class="text-success font-weight-bold">Faites apparaître le texte en cliquant sur le titre du chapitre que vous souhaitez consulter.</p>
     <!-- DAY ONE -->
     <div id="day1" class="mt-3">
