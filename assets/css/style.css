@@ -18,19 +18,17 @@ footer {
   margin-top: 2%;
   padding: 5%;
 }
-#adventureBegins {
-  font-family: PokemonHollow;
-  font-size: 3rem;
-}
-#navbarCA {
+#navbarDesktop {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1030;
   height: 100vh;
   background-color: #25292d;
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
 }
-#navbarMobileContent {
+#mobileNav {
   display: none;
 }
 .dailyReport {
@@ -60,10 +58,19 @@ footer {
   url("../fonts/PokemonHollow.woff2") format("woff2");
 }
 @media screen and (max-width: 768px){
-  #navbarCA {
+  footer {
+    padding-bottom: 4.5rem;
+  }
+  #navbarDesktop {
     display: none;
   }
-  #navbarMobileContent {
-    display: inline;
+  #mobileNav {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    z-index: 1300;
+    background-color: #25292d;
+    width: 110vw;
+    border-top: 5px ridge black;
   }
 }
