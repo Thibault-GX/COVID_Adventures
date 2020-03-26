@@ -18,17 +18,47 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="shortcut icon" href="covidAdventures.ico" type="image/x-icon">
 </head>
-<body class="bg-dark">
+<body id="beginning" class="bg-dark">
+  <!-- NAV -->
+  <nav id="navbarDesktop" class="navbar flex-column">
+    <a href="#beginning"><i class="fas fa-arrow-alt-circle-up fa-3x text-light"></i></a>
+    <ul id="navList" class="nav nav-pills flex-column">
+      <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home fa-2x text-light"></i></a></li>
+      <li class="nav-item"><a class="nav-link" href="day1.html">Jour 1</a></li>
+      <li class="nav-item"><a class="nav-link" href="day2.html">Jour 2</a></li>
+      <li class="nav-item"><a class="nav-link" href="day3.html">Jour 3</a></li>
+    </ul>
+    <a href="#end"><i class="fas fa-arrow-alt-circle-down fa-3x text-light"></i></a>
+  </nav>
+  <!-- NAV MOBILE -->
+  <nav id="mobileNav" class="row navbar navbar-expand-lg justify-content-around">
+    <button class="navbar-toggler row justify-content-center" type="button" data-toggle="collapse" data-target="#mobileNavContent" aria-controls="mobileNavContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fa fa-bars fa-2x text-light" aria-hidden="true"></i></span>
+    </button>
+    <div class="collapse navbar-collapse text-center" id="mobileNavContent">
+      <div class="row justify-content-around">
+        <a href="#beginning" class="col-3 align-self-center"><i class="fas fa-arrow-alt-circle-up fa-3x text-light"></i></a>
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home fa-2x text-light"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="day1.html">Jour 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="day2.html">Jour 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="day3.html">Jour 3</a></li>
+        </ul>
+        <a href="#end" class="col-3 align-self-center"><i class="fas fa-arrow-alt-circle-down fa-3x text-light"></i></a>
+      </div>
+    </div>
+  </nav>
+  <!-- NAV'S END -->
   <div class="container">
-    <h1>Mentions Légales</h1>
+    <h1 class="col-12 text-center">Mentions Légales</h1>
     <h2>Responsable de la publication</h2>
     <p>Monsieur Grimoux Thibault<br>E-mail : thibault.grimoux@gmail.com</p>
     <h2>Conception et réalisation du site</h2>
     <p>Monsieur Grimoux Thibault</p>
     <h2>Hébergement</h2>
-    <p>Le projet COVID Adventures est hébergé par <a href="https://github.com/">GitHub</a>, dont les serveurs sont soumis à la loi de l'État de Californie des États-Unis d'Amérique.</p>
+    <p>Le projet COVID Adventures est hébergé par <a class="font-weight-bold" href="https://github.com/">GitHub</a>, dont les serveurs sont soumis à la loi de l'État de Californie des États-Unis d'Amérique.</p>
     <p>Aucunes données des visiteurs du projet ne sont utilisées à des fins commerciales ou ne sont stockées par l'auteur du projet.</p>
-    <p>En parcourant COVID Adventures, votre adresse IP, votre heure de connexion, votre localisation ainsi que votre système d'exploitation et votre navigateur sont susceptibles d'être enregistrés par <a class="font-weight-bold" href="https://www.freecounterstat.com">freecounterstat.com</a> à des fins statistiques. Dans le cas où vous seriez contre la collecte de ces données, vous pouvez prendre contact avec <a class="font-weight-bold" href="https://www.freecounterstat.com">freecounterstat.com</a> pour demander la supression des données vous concernant.</p>
+    <p>En parcourant COVID Adventures, votre adresse IP, votre heure de connexion, votre localisation ainsi que votre système d'exploitation et votre navigateur sont susceptibles d'être enregistrés par <a class="font-weight-bold" href="https://www.hitwebcounter.com/">hitwebcounter.com</a> à des fins statistiques. Dans le cas où vous seriez contre la collecte de ces données, vous pouvez prendre contact avec <a class="font-weight-bold" href="https://www.hitwebcounter.com/">hitwebcounter.com</a> pour demander la supression des données vous concernant.</p>
     <h2>Droits de Propriété Intellectuelle</h2>
     <p>En acccord avec l’article L122-5 4° du Code de la propriété intellectuelle, COVID Adventures propose des textes et des images pouvant parfois tourner en dérision des personnalités publiques et leurs propos.</p>
     <p>L'univers et les personnages sur lesquels sont basés l'histoire de COVID Adventures sont tirés des jeux vidéo de la licence Pokémon, dont les droits sont détenus et exploités par The Pokémon Company, Nintendo et Game Freaks.</p>
@@ -36,6 +66,62 @@
     <p>Ce site peut avoir été relié à d’autres sites par le biais de liens hypertexte. L'auteur décline toute responsabilité concernant les informations présentées sur ces autres sites.</p>
     <p>COVID Adventures n'utilise aucun cookies sur son site et n'enregistre aucune données personnelles de ses visiteurs.</p>
   </div>
+  <!-- FOOTER -->
+  <footer id="end" class="row flex-wrap justify-content-around">
+    <div class="col-12 row justify-content-around">
+      <button type="button" class="btn btn-danger col-md-4 m-2" data-toggle="modal" data-target="#disclaimerModal">Avertissements et Mentions Légales</button>
+      <div class="modal" id="disclaimerModal" tabindex="-1" role="dialog" aria-labelledby="disclaimerModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content bg-dark">
+            <div class="modal-header">
+              <h5 class="modal-title text-danger font-weight-bold" id="disclaimerLabel">Avertissements et Mentions Légales</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-justify">
+              <p>COVID Adventure est un projet ayant pour but premier de distraire son auteur et son entourage durant la période de confinement liée à la crise sanitaire du COVID-19. Il n'est en aucun cas affilié à Nintendo, Game Freaks ou The Pokémon Company dont la licence Pokémon et ses personnages appartiennent.</p>
+              <p>L'auteur de COVID Adventures assume son rôle parodique ainsi que les blagues de mauvais goût qui pourraient survenir au fil de ses lignes. Aussi, si vous craignez d'être un peu sensible et que vous ne vous y retrouvez pas dans ces écrits, ne vous forcez pas à les lire, personne ne vous en voudra.</p>
+              <p>Si vous souhaitez faire part de vos remarques constructives ou partager votre ressenti, vous êtes les bienvenus et pouvez le faire <a href="mailto:thibault.grimoux@gmail.com?subject=COVID%20Adventures" target="_blank" class="font-weight-bold">par ici</a>.</p>
+              <p class="text-warning"><span class="text-danger">/!\</span> Les Mentions Légales de COVID Adventures sont accessibles sur leur <a class="font-weight-bold" href="./legalNotice.html">page dédiée</a>. <span class="text-danger">/!\</span></p>
+              <p>Sur ces bonnes paroles, bonne lecture à tous et prenez soin de vous. <i class="fas fa-kiss-wink-heart text-danger"></i></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-success col-md-4 m-2" data-toggle="modal" data-target="#bonusModal">BONUS</button>
+      <div class="modal" id="bonusModal" tabindex="-1" role="dialog" aria-labelledby="bonusModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content bg-dark">
+            <div class="modal-header">
+              <h5 class="modal-title text-success font-weight-bold" id="bonusLabel">BONUS</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-justify d-flex flex-wrap justify-content-center">
+              <p>L'excellente parodie animée Pokémon Golder de <a href="https://www.youtube.com/channel/UCU23CAa9oKtxRVvBMkgIanQ" target="_blank" title="vers la chaîne YouTube de MattyBurrito">MattyBurrito</a> !</p>
+              <iframe class="mb-5" src="https://www.youtube.com/embed/o2agjv7872w" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="mb-5" src="https://www.youtube.com/embed/yvML_PMr6L4"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/Hm5Jlnq8NHk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 flex-column text-center bg-secondary rounded border m-3">
+      <p>Nos aventures ont été vues par</p>
+      <img class="img-fluid" src="https://hitwebcounter.com/counter/counter.php?page=7214944&style=0036&nbdigits=5&type=ip&initCount=0" alt="Compteur de visites">
+      <p>personnes.</p>
+    </div>
+  </footer>
+  <!-- FOOTER'S END -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

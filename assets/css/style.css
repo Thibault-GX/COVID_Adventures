@@ -15,8 +15,7 @@ ol > li {
 }
 footer {
   background-color: #151719;
-  margin-top: 2%;
-  padding: 5%;
+  padding-top: 2%;
 }
 #navbarDesktop {
   position: fixed;
@@ -45,6 +44,9 @@ footer {
   color: #040dc9;
   text-shadow: -2px 0 #bf8f01, 0 2px #bf8f01, 2px 0 #ffc107, 0 -2px #ffd044;
 }
+.row {
+  margin: 0;
+}
 @font-face {
   font-family: "PokemonSolid";
 
@@ -70,7 +72,7 @@ footer {
     bottom: 0;
     z-index: 1300;
     background-color: #25292d;
-    width: 110vw;
+    width: 100vw;
     border-top: 5px ridge black;
   }
 }
